@@ -1341,200 +1341,249 @@ const IMGS = {
 </nav>
 
 <!-- HERO -->
-<section id="hero" style="padding:0; max-width:100%; position:relative;">
-  <div class="hero-bg">
-  <video autoplay muted loop playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.92;">
-    <source src="https://napesco.com.au/napesco-hero-background.mp4" type="video/mp4">
-  </video>
-  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,9,19,0.25) 0%,rgba(5,15,36,0.35) 60%,rgba(10,24,54,0.5) 100%);"></div>
-</div>
-  <div class="hero-bg-pattern"></div>
-  <div class="hero-scan"></div>
-  <div class="hero-depth"></div>
+<section id="hero" style="padding:0; max-width:100%; position:relative; min-height:100vh; display:flex; flex-direction:column;">
 
-  <div class="hero-split">
+  <!-- Video background -->
+  <div style="position:absolute;inset:0;overflow:hidden;z-index:0;">
+    <video autoplay muted loop playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.88;">
+      <source src="https://napesco.com.au/napesco-hero-background.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,12,30,0.55) 0%,rgba(5,12,30,0.40) 50%,rgba(5,12,30,0.65) 100%);"></div>
+  </div>
 
-    <!-- LEFT: Main message -->
-    <div class="hero-left fade-up">
+  <!-- Content -->
+  <div style="position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:center;max-width:1100px;margin:0 auto;padding:120px 48px 60px;width:100%;box-sizing:border-box;">
 
-      <!-- Certification strip -->
-      <div class="hero-cert-strip">
-        <div class="cert-badge"><span class="dot"></span>API Certification Program Underway</div>
-        <div class="cert-divider"></div>
-        <div class="cert-label">Upstream Oil &amp; Gas — Onshore &amp; Offshore</div>
-      </div>
+    <!-- Top badge strip -->
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+      <div class="cert-badge"><span class="dot"></span>API Certification Program Underway</div>
+      <div class="cert-divider"></div>
+      <div class="cert-label">Upstream Oil &amp; Gas — Onshore &amp; Offshore</div>
+    </div>
 
-      <div class="hero-eyebrow">Northern Australia's Dedicated OCTG Facility — Darwin, NT</div>
+    <div class="hero-eyebrow">Northern Australia's Dedicated OCTG Facility — Darwin, NT</div>
 
-      <h1 class="hero-headline">
-        <span class="hl-white">NORTHERN TERRITORY</span>
-        <span class="hl-red">OCTG SERVICE</span>
-        <span class="hl-white">FACILITY</span>
-        <span class="hl-dim">Thread Repair · Bucking · Hardbanding · API Inspection</span>
-      </h1>
+    <!-- Main headline -->
+    <h1 style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(52px,6vw,88px);line-height:0.95;letter-spacing:-1px;margin:0 0 28px;">
+      <span style="color:#ffffff;display:block;">NORTHERN TERRITORY</span>
+      <span style="color:#c0192a;display:block;">OCTG SERVICE</span>
+      <span style="color:#ffffff;display:block;">FACILITY</span>
+      <span style="color:rgba(255,255,255,0.55);display:block;font-size:clamp(18px,2vw,26px);font-weight:600;letter-spacing:0;margin-top:12px;">Thread Repair · Bucking · Hardbanding · API Inspection</span>
+    </h1>
 
-      <p class="hero-lead">
-        When your drilling or workover program demands <strong>precision tubular preparation</strong>, NAPESCO Australia delivers OCTG machining, make-up, break-out, and thread repair to API Q1-aligned standards — locally in Darwin, reducing logistics risk and keeping your rig on schedule.
-      </p>
-      <p class="hero-lead">
-        Supporting <strong>offshore platforms, onshore wells, and intervention operations</strong> across the Browse Basin, Timor Sea, and Northern Australia.</p>
-      <p class="hero-lead commissioning-note" style="background:rgba(240,165,0,0.1);border-left:3px solid var(--gold);padding:12px 16px;border-radius:4px;font-size:0.9rem;margin-top:16px;">
-        <strong>Comm        </a>
-        <a href="#services-section" class="svc-item" style="text-decoration:none;">
-          <div class="svc-num">04</div>
-          <div class="svc-icon">🧪</div>
-          <div class="svc-text">
-            <strong>Thread Phosphating</strong>
-            <span>Corrosion protection · galling resistance · in-house facility</span>
-          </div>
-          <div class="svc-arrow">›</div>
-        </a>
-        <a href="#services-section" class="svc-item" style="text-decoration:none;">
-          <div class="svc-num">05</div>
-          <div class="svc-icon">📏</div>
-          <div class="svc-text">
-            <strong>API Gauging &amp; Inspection</strong>
-            <span>Calibrated ring &amp; pin gauges · Mitutoyo precision instruments · Gagemaker gauge sets</span>
-          </div>
-          <div class="svc-arrow">›</div>
-        </a>
-      </div>
+    <!-- Body text -->
+    <p style="color:rgba(255,255,255,0.85);font-size:clamp(14px,1.1vw,17px);line-height:1.7;max-width:640px;margin:0 0 12px;">
+      When your drilling or workover program demands <strong style="color:#fff;">precision tubular preparation</strong>, NAPESCO Australia delivers OCTG machining, make-up, break-out, and thread repair to API Q1-aligned standards — locally in Darwin, reducing logistics risk and keeping your rig on schedule.
+    </p>
+    <p style="color:rgba(255,255,255,0.75);font-size:clamp(13px,1vw,16px);line-height:1.7;max-width:640px;margin:0 0 20px;">
+      Supporting <strong style="color:#fff;">offshore platforms, onshore wells, and intervention operations</strong> across the Browse Basin, Timor Sea, and Northern Australia.
+    </p>
 
-      <!-- Operations panel -->
-      <div class="ops-panel">
-        <h4>Operations Supported</h4>
-        <div class="ops-tags">
-          <span class="ops-tag"><span class="dot"></span>Browse Basin</span>
-          <span class="ops-tag"><span class="dot"></span>Timor Sea</span>
-          <span class="ops-tag"><span class="dot"></span>Bonaparte Gulf</span>
-          <span class="ops-tag"><span class="dot"></span>NT Onshore</span>
-          <span class="ops-tag"><span class="dot"></span>WA Offshore</span>
-          <span class="ops-tag"><span class="dot"></span>Arafura Sea</span>
+    <!-- Commissioning note -->
+    <div style="background:rgba(240,165,0,0.12);border-left:3px solid #f0a500;padding:12px 16px;border-radius:4px;font-size:0.88rem;color:rgba(255,255,255,0.85);max-width:640px;margin-bottom:32px;">
+      <strong style="color:#f0a500;">Commissioning Status:</strong> NAPESCO Australia is currently completing final commissioning activities and API certification processes, with full operational capability expected mid-2026.
+    </div>
+
+    <!-- Service squares with hover tooltips -->
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:36px;">
+
+      <a href="#services-section" class="hero-svc-sq">
+        <span class="sq-icon">🔩</span>
+        <div class="sq-title">CNC Thread Repair</div>
+        <div class="sq-sub">API &amp; Premium</div>
+        <div class="sq-tooltip">
+          <strong>CNC Thread Repair</strong>
+          <ul><li>Mazak PowerMaster-N Chucker</li><li>MAZATROL 640T control</li><li>14.75" (374mm) spindle bore</li><li>API &amp; premium connections</li></ul>
         </div>
+      </a>
+
+      <a href="#services-section" class="hero-svc-sq">
+        <span class="sq-icon">⚙️</span>
+        <div class="sq-title">Bucking &amp; Break-Out</div>
+        <div class="sq-sub">500–70,000 ft-lbs</div>
+        <div class="sq-tooltip">
+          <strong>Tubular Bucking &amp; Break-Out</strong>
+          <ul><li>5"–15" pipe range</li><li>±0.2% torque accuracy</li><li>VAM · Tenaris · JFE · Grant Prideco</li><li>Auto PDF torque report</li></ul>
+        </div>
+      </a>
+
+      <a href="#services-section" class="hero-svc-sq">
+        <span class="sq-icon">🔥</span>
+        <div class="sq-title">Hardbanding</div>
+        <div class="sq-sub">~56 HRC</div>
+        <div class="sq-tooltip">
+          <strong>Drill Pipe Hardbanding</strong>
+          <ul><li>Tool joint protection</li><li>~56 Rockwell C hardness</li><li>Extends DP life 3×</li><li>Reduces casing wear 50%</li></ul>
+        </div>
+      </a>
+
+      <a href="#services-section" class="hero-svc-sq">
+        <span class="sq-icon">📏</span>
+        <div class="sq-title">API Inspection</div>
+        <div class="sq-sub">Gauging &amp; NDT</div>
+        <div class="sq-tooltip">
+          <strong>API Gauging &amp; Inspection</strong>
+          <ul><li>Calibrated ring &amp; pin gauges</li><li>Mitutoyo · Gagemaker</li><li>BHA &amp; Drill Pipe inspection</li></ul>
+        </div>
+      </a>
+
+      <a href="#services-section" class="hero-svc-sq">
+        <span class="sq-icon">🚢</span>
+        <div class="sq-title">Field Support</div>
+        <div class="sq-sub">Offshore &amp; Onshore</div>
+        <div class="sq-tooltip">
+          <strong>Offshore &amp; Onshore Support</strong>
+          <ul><li>Rig-ready OCTG prep</li><li>Timor Sea &amp; Browse Basin</li><li>Local workforce — no FIFO</li></ul>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- CTA buttons -->
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:40px;">
+      <a href="#services-section" class="btn-primary">View Our Services</a>
+      <a href="#contact" class="btn-outline">Request Quotation</a>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="hero-statsbar">
+      <div class="hstat">
+        <div class="hstat-num">70<sup>K</sup></div>
+        <div class="hstat-label">ft-lbs Max Bucking Torque</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-num">5–15<sup>"</sup></div>
+        <div class="hstat-label">Pipe Diameter Range</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-num">25<sup>km</sup></div>
+        <div class="hstat-label">From Darwin Port &amp; Operations</div>
       </div>
     </div>
 
-  </div><!-- end hero-split -->
+    <!-- Operations tags -->
+    <div class="ops-tags" style="margin-top:24px;">
+      <span class="ops-tag"><span class="dot"></span>Browse Basin</span>
+      <span class="ops-tag"><span class="dot"></span>Timor Sea</span>
+      <span class="ops-tag"><span class="dot"></span>Bonaparte Gulf</span>
+      <span class="ops-tag"><span class="dot"></span>NT Onshore</span>
+      <span class="ops-tag"><span class="dot"></span>WA Offshore</span>
+      <span class="ops-tag"><span class="dot"></span>Arafura Sea</span>
+    </div>
+
+  </div>
 
   <!-- Scroll cue -->
-  <div class="hero-scroll">
+  <div class="hero-scroll" style="position:relative;z-index:2;">
     <span>Scroll</span>
     <div class="scroll-arrow"></div>
   </div>
+
 </section>
 
 <!-- SERVICES -->
-<div id="services-section" class="section-full" style="background:#f8fafc;">
-  <div class="section-inner">
-    <div class="section-tag">What We Do</div>
-    <h2 class="section-title">Full-Scope OCTG <em>Services</em></h2>
-    <p class="section-subtitle">From precision CNC thread repair to tubular bucking, hardbanding, and API inspection — every OCTG service your drilling program needs, delivered locally in Darwin.</p>
+<section id="services-section" style="background:#f8fafc;padding:100px 0;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 48px;">
+    <div class="section-tag" style="color:#c0192a;">What We Do</div>
+    <h2 class="section-title" style="color:#0d1b3e;">Full-Scope OCTG <em style="color:#c0192a;">Services</em></h2>
+    <p style="color:#4a5568;font-size:16px;line-height:1.7;max-width:680px;margin-bottom:56px;">
+      From precision CNC thread repair to tubular bucking, hardbanding, and API inspection — every OCTG service your drilling program needs, delivered locally in Darwin.
+    </p>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+
+      <!-- Card 1: CNC Thread Repair -->
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:32px;box-shadow:0 2px 12px rgba(0,0,0,0.06);position:relative;overflow:hidden;transition:box-shadow 0.3s,transform 0.2s;" onmouseover="this.style.boxShadow='0 8px 32px rgba(13,27,62,0.14)';this.style.transform='translateY(-3px)'" onmouseout="this.style.boxShadow='0 2px 12px rgba(0,0,0,0.06)';this.style.transform='translateY(0)'">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#c0192a;"></div>
+        <div style="font-size:32px;margin-bottom:16px;">🔩</div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#c0192a;margin-bottom:8px;">01</div>
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;color:#0d1b3e;margin:0 0 12px;">OCTG Thread Repair &amp; Machining</h3>
+        <p style="color:#4a5568;font-size:14px;line-height:1.7;margin:0 0 20px;">Precision CNC thread repair on OCTG tubulars using a Mazak PowerMaster-N Chucker with MAZATROL 640T control. Suitable for OCTG tubular threading and repair for API and premium connections.</p>
+        <div style="border-top:1px solid #edf2f7;padding-top:16px;display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Machine</span><span style="color:#0d1b3e;font-weight:600;">Mazak PowerMaster-N Chucker</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Control</span><span style="color:#0d1b3e;font-weight:600;">MAZATROL 640T</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Spindle Power</span><span style="color:#0d1b3e;font-weight:600;">60 HP</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Spindle Bore</span><span style="color:#0d1b3e;font-weight:600;">14.75" (374mm)</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Chuck Size</span><span style="color:#0d1b3e;font-weight:600;">28"</span></div>
+        </div>
+      </div>
+
+      <!-- Card 2: Bucking -->
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:32px;box-shadow:0 2px 12px rgba(0,0,0,0.06);position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 8px 32px rgba(13,27,62,0.14)';this.style.transform='translateY(-3px)'" onmouseout="this.style.boxShadow='0 2px 12px rgba(0,0,0,0.06)';this.style.transform='translateY(0)'">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#c0192a;"></div>
+        <div style="font-size:32px;margin-bottom:16px;">⚙️</div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#c0192a;margin-bottom:8px;">02</div>
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;color:#0d1b3e;margin:0 0 12px;">Tubular Bucking &amp; Break-Out</h3>
+        <p style="color:#4a5568;font-size:14px;line-height:1.7;margin:0 0 20px;">Controlled make-up and break-out of OCTG connections using a fully rotational 70,000 ft-lb hydraulic bucking unit with no-mark jaws for premium connections including VAM, Tenaris, JFE, and Grant Prideco.</p>
+        <div style="border-top:1px solid #edf2f7;padding-top:16px;display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Torque Range</span><span style="color:#0d1b3e;font-weight:600;">500 – 70,000 ft-lbs</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Pipe Range</span><span style="color:#0d1b3e;font-weight:600;">5" – 15" (127–380mm)</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Accuracy</span><span style="color:#0d1b3e;font-weight:600;">±0.2%</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Connections</span><span style="color:#0d1b3e;font-weight:600;">VAM · Tenaris · JFE · Grant Prideco</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Reporting</span><span style="color:#0d1b3e;font-weight:600;">Auto PDF torque report</span></div>
+        </div>
+      </div>
+
+      <!-- Card 3: Hardbanding -->
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:32px;box-shadow:0 2px 12px rgba(0,0,0,0.06);position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 8px 32px rgba(13,27,62,0.14)';this.style.transform='translateY(-3px)'" onmouseout="this.style.boxShadow='0 2px 12px rgba(0,0,0,0.06)';this.style.transform='translateY(0)'">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#c0192a;"></div>
+        <div style="font-size:32px;margin-bottom:16px;">🔥</div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#c0192a;margin-bottom:8px;">03</div>
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;color:#0d1b3e;margin:0 0 12px;">Drill Pipe Hardbanding</h3>
+        <p style="color:#4a5568;font-size:14px;line-height:1.7;margin:0 0 20px;">Application and reapplication of wear-resistant alloy weld overlay to drill pipe tool joints, reducing casing wear by up to 50% and extending drill string life up to 3×. Includes end-face grinding for tool joint preparation.</p>
+        <div style="border-top:1px solid #edf2f7;padding-top:16px;display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Hardness</span><span style="color:#0d1b3e;font-weight:600;">~56 HRC</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Casing Wear Reduction</span><span style="color:#0d1b3e;font-weight:600;">Up to 50%</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Service Life Extension</span><span style="color:#0d1b3e;font-weight:600;">Up to 3×</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Preheat</span><span style="color:#0d1b3e;font-weight:600;">Induction preheat system</span></div>
+        </div>
+      </div>
+
+      <!-- Card 4: API Gauging -->
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:32px;box-shadow:0 2px 12px rgba(0,0,0,0.06);position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 8px 32px rgba(13,27,62,0.14)';this.style.transform='translateY(-3px)'" onmouseout="this.style.boxShadow='0 2px 12px rgba(0,0,0,0.06)';this.style.transform='translateY(0)'">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#c0192a;"></div>
+        <div style="font-size:32px;margin-bottom:16px;">📐</div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#c0192a;margin-bottom:8px;">04</div>
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;color:#0d1b3e;margin:0 0 12px;">API Gauging &amp; Inspection</h3>
+        <p style="color:#4a5568;font-size:14px;line-height:1.7;margin:0 0 20px;">Comprehensive API thread gauging using calibrated ring and pin gauges across a wide range of pipe sizes. Dedicated gauge room with Mitutoyo precision measurement instruments and Gagemaker gauge sets.</p>
+        <div style="border-top:1px solid #edf2f7;padding-top:16px;display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Gauge Supplier</span><span style="color:#0d1b3e;font-weight:600;">Shanghai Jingu Petroleum</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Thread Types</span><span style="color:#0d1b3e;font-weight:600;">API + Premium (Tuboscope/TCS)</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Instruments</span><span style="color:#0d1b3e;font-weight:600;">Mitutoyo · Gagemaker</span></div>
+        </div>
+      </div>
+
+      <!-- Card 5: NDT Inspection -->
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:32px;box-shadow:0 2px 12px rgba(0,0,0,0.06);position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 8px 32px rgba(13,27,62,0.14)';this.style.transform='translateY(-3px)'" onmouseout="this.style.boxShadow='0 2px 12px rgba(0,0,0,0.06)';this.style.transform='translateY(0)'">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#c0192a;"></div>
+        <div style="font-size:32px;margin-bottom:16px;">🔬</div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#c0192a;margin-bottom:8px;">05</div>
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;color:#0d1b3e;margin:0 0 12px;">OCTG &amp; NDT Inspection Services</h3>
+        <p style="color:#4a5568;font-size:14px;line-height:1.7;margin:0 0 20px;">Inspection services supporting the integrity of OCTG and drilling tools prior to deployment. Specialist inspection support to ensure tubulars and drilling assemblies meet operational requirements before going downhole.</p>
+        <div style="border-top:1px solid #edf2f7;padding-top:16px;display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">BHA Drilling Tools</span><span style="color:#0d1b3e;font-weight:600;">Bottom Hole Assembly inspection</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Drill Pipe</span><span style="color:#0d1b3e;font-weight:600;">Specialised tubular inspection</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Standards</span><span style="color:#0d1b3e;font-weight:600;">API &amp; industry specifications</span></div>
+        </div>
+      </div>
+
+      <!-- Card 6: Offshore/Onshore Support -->
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:32px;box-shadow:0 2px 12px rgba(0,0,0,0.06);position:relative;overflow:hidden;" onmouseover="this.style.boxShadow='0 8px 32px rgba(13,27,62,0.14)';this.style.transform='translateY(-3px)'" onmouseout="this.style.boxShadow='0 2px 12px rgba(0,0,0,0.06)';this.style.transform='translateY(0)'">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#c0192a;"></div>
+        <div style="font-size:32px;margin-bottom:16px;">🚢</div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#c0192a;margin-bottom:8px;">06</div>
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;color:#0d1b3e;margin:0 0 12px;">Offshore &amp; Onshore Support</h3>
+        <p style="color:#4a5568;font-size:14px;line-height:1.7;margin:0 0 20px;">Comprehensive mobilisation preparation and support for offshore and onshore drilling programs. NAPESCO Australia provides rig-ready OCTG preparation, ensuring tubulars are inspected, made-up, and certified prior to deployment.</p>
+        <div style="border-top:1px solid #edf2f7;padding-top:16px;display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Offshore Programs</span><span style="color:#0d1b3e;font-weight:600;">Timor Sea, Browse Basin</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Onshore Programs</span><span style="color:#0d1b3e;font-weight:600;">Northern Territory &amp; beyond</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:#718096;">Workforce</span><span style="color:#0d1b3e;font-weight:600;">100% Local — No FIFO</span></div>
+        </div>
+      </div>
+
+    </div>
   </div>
-  <div class="services-grid" style="margin-top:48px;padding:0 48px 80px;">
-
-    <div class="service-card">
-      <div class="service-num">01</div>
-      <div class="service-icon">🔩</div>
-      <h3>OCTG Thread Repair & Machining</h3>
-      <p>Precision CNC thread repair on OCTG tubulars using a Mazak PowerMaster-N Chucker with MAZATROL 640T control. Capable of turning pipe from 5" suitable for OCTG tubular threading and repair for API and premium connections.</p>
-      <div class="service-specs">
-        <div class="spec-row"><span class="spec-key">Machine</span><span class="spec-val">Mazak PowerMaster-N Chucker</span></div>
-        <div class="spec-row"><span class="spec-key">Control</span><span class="spec-val">MAZATROL 640T</span></div>
-        <div class="spec-row"><span class="spec-key">Spindle Power</span><span class="spec-val">60 HP</span></div>
-        <div class="spec-row"><span class="spec-key">Spindle Bore</span><span class="spec-val">14.75" (374mm)</span></div>
-        <div class="spec-row"><span class="spec-key">Chuck Size</span><span class="spec-val">28"</span></div>
-      </div>
-    </div>
-
-    <div class="service-card">
-      <div class="service-num">02</div>
-      <div class="service-icon">⚙️</div>
-      <h3>Tubular Bucking & Break-Out</h3>
-      <p>Controlled make-up and break-out of OCTG connections using a fully rotational 70,000 ft-lb hydraulic bucking unit with no-mark jaws for premium connections including VAM, Tenaris, JFE, and Grant Prideco.</p>
-      <div class="service-specs">
-        <div class="spec-row"><span class="spec-key">Torque Range</span><span class="spec-val">500 – 70,000 ft-lbs</span></div>
-        <div class="spec-row"><span class="spec-key">Pipe Range</span><span class="spec-val">5" – 15" (60–380mm)</span></div>
-        <div class="spec-row"><span class="spec-key">Accuracy</span><span class="spec-val">±0.2%</span></div>
-        <div class="spec-row"><span class="spec-key">Rotation</span><span class="spec-val">Full 360°</span></div>
-      </div>
-    </div>
-
-    <div class="service-card">
-      <div class="service-num">03</div>
-      <div class="service-icon">🔥</div>
-      <h3>Drill Pipe Hardbanding</h3>
-      <p>Application and reapplication of wear-resistant alloy weld overlay to drill pipe tool joints, reducing casing wear by up to 50% and extending drill string life up to 3×. Includes end-face grinding for tool joint preparation.</p>
-      <div class="service-specs">
-        <div class="spec-row"><span class="spec-key">Hardness</span><span class="spec-val">~56 Rockwell C</span></div>
-        <div class="spec-row"><span class="spec-key">Casing Wear Reduction</span><span class="spec-val">Up to 50%</span></div>
-        <div class="spec-row"><span class="spec-key">Service Life Extension</span><span class="spec-val">Up to 3×</span></div>
-      </div>
-    </div>
-
-    <div class="service-card">
-      <div class="service-num">04</div>
-      <div class="service-icon">🧪</div>
-      <h3>Thread Phosphating</h3>
-      <p>In-house thread phosphating service providing corrosion protection and improved galling resistance for API and premium OCTG connections. Phosphating is a standard part of our tubular preparation offering, ensuring connection integrity before make-up.</p>
-      <div class="service-specs">
-        <div class="spec-row"><span class="spec-key">Purpose</span><span class="spec-val">Corrosion protection & galling resistance</span></div>
-        <div class="spec-row"><span class="spec-key">Scope</span><span class="spec-val">API & premium connections</span></div>
-        <div class="spec-row"><span class="spec-key">Chemical Storage</span><span class="spec-val">On-site with spill containment</span></div>
-      </div>
-    </div>
-
-    <div class="service-card">
-      <div class="service-num">05</div>
-      <div class="service-icon">📏</div>
-      <h3>Inspection & API Gauging</h3>
-      <p>Comprehensive API thread gauging using a calibrated set of ring and pin gauges across a wide range of pipe sizes. Dedicated climate-controlled gauge room with Mitutoyo precision measurement instruments.</p>
-      <div class="service-specs">
-        <div class="spec-row"><span class="spec-key">Gauge Supplier</span><span class="spec-val">Shanghai Jingu Petroleum</span></div>
-        <div class="spec-row"><span class="spec-key">Thread Types</span><span class="spec-val">API + Premium (Tuboscope/TCS)</span></div>
-        <div class="spec-row"><span class="spec-key">Instruments</span><span class="spec-val">Mitutoyo Precision · Gagemaker</span></div>
-      </div>
-    </div>
-
-    <div class="service-card">
-      <div class="service-num">06</div>
-      <div class="service-icon">🔬</div>
-      <h3>OCTG &amp; NDT Inspection Services</h3>
-      <p>Inspection services supporting the integrity of OCTG and drilling tools prior to deployment. NAPESCO Australia provides specialist inspection support to ensure tubulars and drilling assemblies meet operational requirements before going downhole.</p>
-      <div class="service-specs">
-        <div class="spec-row"><span class="spec-key">BHA Drilling Tools</span><span class="spec-val">Bottom Hole Assembly inspection</span></div>
-        <div class="spec-row"><span class="spec-key">Drill Pipe</span><span class="spec-val">Specialised drill pipe & tubular inspection</span></div>
-        <div class="spec-row"><span class="spec-key">Standards</span><span class="spec-val">API & industry specifications</span></div>
-      </div>
-    </div>
-
-    <div class="service-card">
-      <div class="service-num">07</div>
-      <div class="service-icon">🚢</div>
-      <h3>Offshore &amp; Onshore Support</h3>
-      <p>Comprehensive mobilisation preparation and support for offshore and onshore drilling programs. NAPESCO Australia provides rig-ready OCTG preparation, ensuring tubulars are inspected, made-up, and certified prior to deployment.</p>
-      <div class="service-specs">
-        <div class="spec-row"><span class="spec-key">Offshore Programs</span><span class="spec-val">Timor Sea, Browse Basin</span></div>
-        <div class="spec-row"><span class="spec-key">Onshore Programs</span><span class="spec-val">Northern Territory & beyond</span></div>
-        <div class="spec-row"><span class="spec-key">Support Type</span><span class="spec-val">Mobilisation prep & logistics coordination</span></div>
-      </div>
-    </div>
-
-    <div class="service-card">
-      <div class="service-num">08</div>
-      <div class="service-icon">🏗️</div>
-      <h3>General Machining & Support</h3>
-      <p>Secondary machining capability using a Hafco Metalmaster shop lathe with DRO for custom parts, sub-adapters, and tooling. Full workshop infrastructure including Trinity 11 screw compressor and 7-tonne forklift for pipe handling.</p>
-      <div class="service-specs">
-        <div class="spec-row"><span class="spec-key">Secondary Lathe</span><span class="spec-val">Hafco Metalmaster</span></div>
-        <div class="spec-row"><span class="spec-key">Handling</span><span class="spec-val">7T Enforcer Forklift × 2</span></div>
-        <div class="spec-row"><span class="spec-key">Air Supply</span><span class="spec-val">Trinity 11 Compressor</span></div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="section-divider"></div>
+</section>
 
 <!-- EQUIPMENT -->
 <section id="equipment">
