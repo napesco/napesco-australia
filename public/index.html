@@ -537,10 +537,10 @@ section {
   font-size: 12px; margin-bottom: 6px;
 }
 
-.spec-row .spec-key { color: var(--text-light); }
+.spec-row .spec-key { color: #555; }
 .spec-row .spec-val {
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700; color: var(--gold);
+  font-weight: 700; color: #0d1b3e;
 }
 
 /* ── EQUIPMENT ── */
@@ -1152,7 +1152,7 @@ footer {
 .sq-tooltip ul { margin: 0; padding: 0 0 0 14px; color: rgba(255,255,255,0.75); font-size: 0.75rem; line-height: 1.7; }
 
 /* ── Alternating section backgrounds ── */
-#services-section { background: #ffffff !important; color: #0d1b3e; }
+#services-section { background: #f8fafc !important; color: #0d1b3e; padding-bottom: 80px; }
 #services-section .section-tag { color: var(--red-bright); }
 #services-section .section-title { color: #0d1b3e; }
 #services-section .section-title em { color: var(--red-bright); }
@@ -1194,6 +1194,23 @@ footer {
 #gallery .section-tag { color: var(--red-bright); }
 #gallery .section-title { color: #0d1b3e; }
 #gallery .section-title em { color: var(--red-bright); }
+
+/* ── Service card white overrides ── */
+.service-card h3 { color: #0d1b3e; font-size: 1.15rem; margin: 16px 0 12px; }
+.service-card p { color: #4a5568; font-size: 0.9rem; line-height: 1.7; }
+.service-card .service-num { color: rgba(13,27,62,0.1); }
+.service-card .spec-key { color: #718096; font-size: 0.78rem; }
+.service-card .spec-val { color: #0d1b3e; font-weight: 700; font-size: 0.88rem; }
+.service-card .spec-row { border-bottom-color: #edf2f7; padding: 8px 0; }
+.service-card .pill { background: #edf2f7; color: #0d1b3e; border-color: #e2e8f0; }
+.spec-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+
+#services-section .section-title { color: #0d1b3e !important; }
+#services-section .section-subtitle { color: #4a5568 !important; }
+#services-section .section-tag { color: var(--red-bright) !important; }
+#services-section .section-tag::before { background: var(--red-bright) !important; }
+.service-card h3 { color: #0d1b3e !important; }
+.service-card p { color: #4a5568 !important; }
 </style>
 <script>
 const IMGS = {
@@ -1407,13 +1424,13 @@ const IMGS = {
 </section>
 
 <!-- SERVICES -->
-<div id="services-section" class="section-full">
+<div id="services-section" class="section-full" style="background:#f8fafc;">
   <div class="section-inner">
     <div class="section-tag">What We Do</div>
     <h2 class="section-title">Full-Scope OCTG <em>Services</em></h2>
-    <p class="section-subtitle">From precision thread repair to bucking, hardbanding and phosphating — every service your tubular program needs, delivered locally in Darwin.</p>
+    <p class="section-subtitle">From precision CNC thread repair to tubular bucking, hardbanding, and API inspection — every OCTG service your drilling program needs, delivered locally in Darwin.</p>
   </div>
-  <div class="services-grid" style="margin-top:64px;">
+  <div class="services-grid" style="margin-top:48px;padding:0 48px 80px;">
 
     <div class="service-card">
       <div class="service-num">01</div>
